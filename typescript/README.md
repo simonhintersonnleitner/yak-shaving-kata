@@ -2,12 +2,11 @@
 
 A kata for practicing yak shaving.
 
-## Rules
+## Constraints
 
 - Use TDD.
-- Never mix concerns in the same commit. Each commit should be about one thing.
-- When you discover a problem, stop. Branch off, fix it separately, then rebase your work on top.
-- Never reuse the same context (branch, commit) for unrelated changes.
+- Never mix concerns in the same commit.
+- Never reuse the same context for unrelated changes — neither git branches nor agent sessions.
 - Shave the yaks in the right order.
 
 ## Your task
