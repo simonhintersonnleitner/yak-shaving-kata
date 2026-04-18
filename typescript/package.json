@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "eslint src --ext .ts && tsc --noEmit",
+    "pretest": "npm run build",
     "test": "jest"
   },
   "devDependencies": {
