@@ -2,6 +2,8 @@
 
 A kata for practicing yak shaving.
 
+![Hal changing a lightbulb](https://media.giphy.com/media/RJVyvWomrVuVRXThoM/giphy.gif)
+
 ## Constraints
 
 - Use TDD.
