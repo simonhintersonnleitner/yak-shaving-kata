@@ -1,4 +1,4 @@
-# Order Pricing Kata
+# Yak Shaving Kata
 
 A kata for practicing yak shaving.
 
