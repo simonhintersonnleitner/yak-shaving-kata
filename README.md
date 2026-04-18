@@ -2,7 +2,7 @@
 
 A kata for practicing yak shaving.
 
-![Hal changing a lightbulb](https://media.giphy.com/media/RJVyvWomrVuVRXThoM/giphy.gif)
+![Hal changing a lightbulb](https://i.giphy.com/RJVyvWomrVuVRXThoM.gif)
 
 ## Constraints
 
