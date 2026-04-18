@@ -2,13 +2,17 @@
 
 A kata to practice context discipline.
 
+> It is in the doing of the work that we discover the work that we must do. Doing exposes reality.
+> 
+>~ Woody Zuill
+
 ![Hal changing a lightbulb](https://c.tenor.com/ENgHABC0E60AAAAd/tenor.gif)
 
 ## Constraints
 
 - Use TDD.
 - Never mix concerns in the same commit.
-- Never reuse the same context for unrelated changes — neither git branches nor agent sessions.
+- Never reuse the same context for unrelated changes.
 - Shave the yaks in the right order.
 
 ## Your task
