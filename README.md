@@ -2,7 +2,7 @@
 
 A kata to practice context discipline.
 
-![Hal changing a lightbulb](https://i.giphy.com/RJVyvWomrVuVRXThoM.gif)
+![Hal changing a lightbulb](https://c.tenor.com/ENgHABC0E60AAAAd/tenor.gif)
 
 ## Constraints
 
