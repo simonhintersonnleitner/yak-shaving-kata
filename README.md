@@ -1,6 +1,6 @@
 # Yak Shaving Kata
 
-A kata for practicing yak shaving.
+A kata to practice context discipline.
 
 ![Hal changing a lightbulb](https://i.giphy.com/RJVyvWomrVuVRXThoM.gif)
 
