@@ -12,6 +12,7 @@ A kata to practice context discipline.
 
 - The Agent does everything.
 - Use TDD.
+- Tidy First
 - Never mix concerns in the same commit.
 - Never reuse the same context for unrelated changes.
 - Shave the yaks in the right order.
