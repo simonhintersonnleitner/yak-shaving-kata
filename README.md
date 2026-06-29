@@ -28,3 +28,4 @@ A subscription order applies a 15% discount to the base price (e.g. a base price
 Pick a language and follow the setup instructions in its directory:
 
 - [TypeScript](./typescript/)
+- [Java](./java/)

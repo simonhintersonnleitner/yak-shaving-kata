@@ -1,0 +1,46 @@
+#!/bin/sh
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+set -e
+
+basedir=$( cd -- "$(dirname -- "$0")" && pwd )
+MAVEN_PROJECTBASEDIR="${MAVEN_BASEDIR:-$basedir}"
+
+MVN_JAR="$MAVEN_PROJECTBASEDIR/.mvn/wrapper/maven-wrapper.jar"
+
+JAVA_EXE="java"
+if [ -n "$JAVA_HOME" ]; then
+  JAVA_EXE="$JAVA_HOME/bin/java"
+fi
+
+if [ -r "$MVN_JAR" ]; then
+  CLASSPATH="$MVN_JAR"
+  WRAPPER_LAUNCHER="org.apache.maven.wrapper.MavenWrapperMain"
+  exec "$JAVA_EXE" "-Dmaven.multiModuleProjectDirectory=$MAVEN_PROJECTBASEDIR" -cp "$CLASSPATH" "$WRAPPER_LAUNCHER" "$@"
+else
+  echo "Downloading maven-wrapper..."
+
+  WRAPPER_PROPERTIES="$MAVEN_PROJECTBASEDIR/.mvn/wrapper/maven-wrapper.properties"
+  WRAPPER_URL=$(grep -F "wrapperUrl" "$WRAPPER_PROPERTIES" | cut -d= -f2)
+
+  mkdir -p "$MAVEN_PROJECTBASEDIR/.mvn/wrapper"
+
+  curl -sL "$WRAPPER_URL" -o "$MVN_JAR" || (echo "Failed to download maven-wrapper.jar" && exit 1)
+
+  exec "$JAVA_EXE" "-Dmaven.multiModuleProjectDirectory=$MAVEN_PROJECTBASEDIR" -cp "$MVN_JAR" org.apache.maven.wrapper.MavenWrapperMain "$@"
+fi
